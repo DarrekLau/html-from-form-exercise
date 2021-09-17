@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Form</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Travel Reservation Form</h1>
+      </header>
+      <p>*Denote Mandotory</p>
+      <form>
+        Full Name*:<br />
+        <input type="text" name="name" placeholder="FirstName LastName" /><br />
+        Email address*:<br />
+        <input type="email" name="email" placeholder="EMAIL_ADDRESS" /><br />
+        <label for="tour-package">Select Tour Package</label><br />
+        <select name="tourpkg" id="tkpg">
+          <option value="free">Free & Easy</option>
+          <option value="cruise">Cruise</option>
+          <option value="Shopping">Shopping</option>
+        </select>
+        <br />
+        Arrival date*:<br />
+        <input type="date" name="arrl" placeholder="m/d/y" /><br />
+        Number of person*:<br />
+        <input type="number" name="person" placeholder="UNKNOWN_TYPE" /><br />
+        What would you like to avail*?<br />
+        <input type="checkbox" id="board" name="boarding" />
+        <label for="boarding">Boarding</label><br />
+        <input type="checkbox" id="food" name="fooding" />
+        <label for="boarding">Fooding</label><br />
+        <input type="checkbox" id="sight" name="sightseeing" />
+        <label for="boarding">Sight seeing</label><br />
+        Discount Coupon code:<br />
+        <input type="text" name="coupon" placeholder="UNKNOWN_TYPE" /><br />
+        Term and condition*<br />
+        <input type="radio" id="yes" name="agree" value="yes" checked />
+        <label for="yes">I agree</label>
+        <input type="radio" id="no" name="disagree" value="no" unchecked />
+        <label for="no">I disagree</label><br />
+        <button type="button">Complete reservation</button>
+      </form>
+    </main>
+  </body>
+</html>
